@@ -75,7 +75,7 @@ define(["exports", "aurelia-framework", "aurelia-api", "../aurelia-autocomplete"
     throw new Error('Decorating class property failed. Please ensure that transform-class-properties is enabled.');
   }
 
-  var _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _class, _desc, _value, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12, _descriptor13, _descriptor14, _descriptor15, _descriptor16, _descriptor17, _descriptor18, _descriptor19, _descriptor20;
+  var _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _class, _desc, _value, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12, _descriptor13, _descriptor14, _descriptor15, _descriptor16, _descriptor17, _descriptor18, _descriptor19, _descriptor20, _descriptor21;
 
   var AutoCompleteCustomElement = exports.AutoCompleteCustomElement = (_dec = (0, _aureliaViewManager.resolvedView)('spoonx/auto-complete', 'autocomplete'), _dec2 = (0, _aureliaFramework.inject)(_aureliaApi.Config, _aureliaPal.DOM.Element), _dec3 = (0, _aureliaFramework.bindable)({ defaultBindingMode: _aureliaFramework.bindingMode.twoWay }), _dec4 = (0, _aureliaFramework.bindable)({ defaultBindingMode: _aureliaFramework.bindingMode.twoWay }), _dec5 = (0, _aureliaFramework.bindable)({ defaultBindingMode: _aureliaFramework.bindingMode.twoWay }), _dec6 = (0, _aureliaFramework.computedFrom)('results', 'value'), _dec7 = (0, _aureliaFramework.computedFrom)('value'), _dec(_class = _dec2(_class = (_class2 = function () {
     _createClass(AutoCompleteCustomElement, [{
@@ -134,6 +134,8 @@ define(["exports", "aurelia-framework", "aurelia-api", "../aurelia-autocomplete"
       _initDefineProp(this, "sort", _descriptor19, this);
 
       _initDefineProp(this, "criteria", _descriptor20, this);
+
+      _initDefineProp(this, "searchQuery", _descriptor21, this);
 
       this.element = element;
       this.apiEndpoint = api;
@@ -469,5 +471,8 @@ define(["exports", "aurelia-framework", "aurelia-api", "../aurelia-autocomplete"
     initializer: function initializer() {
       return {};
     }
+  }), _descriptor21 = _applyDecoratedDescriptor(_class2.prototype, "searchQuery", [_aureliaFramework.bindable], {
+    enumerable: true,
+    initializer: null
   }), _applyDecoratedDescriptor(_class2.prototype, "showFooter", [_dec6], Object.getOwnPropertyDescriptor(_class2.prototype, "showFooter"), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, "regex", [_dec7], Object.getOwnPropertyDescriptor(_class2.prototype, "regex"), _class2.prototype)), _class2)) || _class) || _class);
 });
