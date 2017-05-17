@@ -82,6 +82,9 @@ export class AutoCompleteCustomElement {
   // Sort method that takes a list and returns a sorted list. No sorting by default.
   @bindable sort = items => items;
 
+  // Search query method
+  @bindable searchQuery;
+
   // Used to make the criteria more specific
   @bindable criteria = {};
 
